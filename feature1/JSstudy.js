@@ -105,11 +105,48 @@ document.write(weekday[num]+"<br>");
 document.write(mydate);
 mydate.setTime(mydate.getTime()+60*60*1000);
 document.write(mydate);
-*/
+
 
 //string
 //小写转换成大写
 var newStr = "I love you";
 var myStr = newStr.toUpperCase();
 document.write(myStr+"<br>");
-document.write(newStr[2]);
+document.write(newStr[2]+"<br>");
+//返回指定字符首次出现的位置indexOf()
+document.write(newStr.indexOf("o",0)+"<br>");
+document.write(newStr.split(" ")+"<br>");
+//提取两个字符之间的字符串
+document.write(newStr.substring(1,5)+"<br>");
+//提取开始字符后的多少个字符串
+document.write(newStr.substr(1,5)+"<br>");
+
+
+//math对象
+var a = 5.3849839;
+document.write(a+"<br>");
+document.write(Math.ceil(a)+"<br>");//向上取整
+document.write(Math.floor(a)+"<br>");//向下取整
+document.write(Math.round(a)+"<br>");
+document.write(Math.random()*10+"<br>");
+
+
+//Array对象
+var myArr1 = [0,1,1,3];
+var myArr2 = [5,4,3,1];
+document.write(myArr1.concat(4,5)+"<br>");
+document.write(myArr1.concat(myArr2)+"<br>");
+//以一定的分隔符返回一个字符串
+document.write(myArr1.join("。")+"<br>");
+//颠倒顺序
+document.write(myArr1.reverse()+"<br>");
+//选定返回的元素，与string的substr相似
+document.write(myArr1.slice(0)+"<br>");
+//排序
+function sortnum(a,b){
+    return a-b;//升序，降序为b-a
+}
+document.write(myArr1.sort(sortnum));
+*/
+
+//浏览器对象navigator
