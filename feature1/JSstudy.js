@@ -38,5 +38,78 @@ function hide(){
 function show(){
     document.getElementById("con").style.display="block";
 }
+
+ <p id="con">today is a bad day</p>
+ <form>
+ <input type="button" onclick="hide()" value="隐藏"/>
+ <input type="button" onclick="show()" value="显示"/>
+ </form>
+
+
+
+//网页交互
+function dianji(){
+    document.write("鼠标单击");
+}
+
+function move(){
+    alert("鼠标经过");
+}
+
+function leave(){
+    alert("鼠标离开");
+}
+
+function focusa(){
+    alert("光标聚焦");
+}
+
+function blura(){
+    alert("光标失焦");
+}
+
+function mes(){
+    alert("选中");
+}
+
+function mes1(){
+    alert("改变");
+}
+
+<form>
+    <input type="button" name="btn" value="单击" onclick="dianji()">
+     <input type="button" name="btn1" value="鼠标经过" onmousemove="move()">
+    <input type="button" name="btn2" value="鼠标离开" onmouseout="leave()">
+    <input type="text" name="tex1" value="光标聚焦" onfocus="focusa()">
+    <input type="text" name="tex2" value="光标失焦" onblur="blura()">
+    <input type="text" name="tex3" value="选中" onselect="mes()">
+    <input type="text" name="tex4" value="改变" onchange="mes1()">
+</form>
+
+
+//JS内置对象
+//date
+//返回设置年份
+var mydate=new Date();
+document.write(mydate+"<br>");
+document.write(mydate.getFullYear()+"<br>");
+mydate.setFullYear(81);
+document.write(mydate.getFullYear()+"<br>");
+
+//返回星期
+var weekday=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+var num=mydate.getDay();
+document.write(mydate.getDay()+"<br>");
+document.write(weekday[num]+"<br>");
+
+document.write(mydate);
+mydate.setTime(mydate.getTime()+60*60*1000);
+document.write(mydate);
 */
 
+//string
+//小写转换成大写
+var newStr = "I love you";
+var myStr = newStr.toUpperCase();
+document.write(myStr+"<br>");
+document.write(newStr[2]);
