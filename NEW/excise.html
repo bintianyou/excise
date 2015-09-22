@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bn</title>
+    <style type="text/css">
+        #doing {
+            z-index: 99;
+            left: 0px;
+            top: 0px;
+            display: none;
+            background: gray;
+        }
+        table {
+            border: solid black thin;
+            width: auto;
+            margin: 10px;
+            float: left;
+        }
+    </style>
+</head>
+<body onclick="clickBody()">
+
+    <p>function() fresh</p>
+
+    <table class="add and move">
+        <thead><th>name</th></thead>
+        <tbody id="father">
+        <tr><td>afaf</td></tr>
+        <tr><td>afaf</td></tr>
+        </tbody>
+    </table>
+    <table>
+        <thead><tr><th>fruit</th><th>color</th></tr></thead>
+        <tbody>
+            <tr><td>apple</td><td>red</td></tr>
+            <tr id="banana"><td>banana</td><td>yellow</td></tr>
+        </tbody>
+    </table>
+    <table>
+        <thead><tr><th>fruit</th><th>color</th></tr></thead>
+        <tbody id="fruit">
+            <tr><td>grass</td><td>purple</td></tr>
+        </tbody>
+    </table>
+    <table>
+        <thead><tr><th>fruit</th><th>color</th></tr></thead>
+        <tbody>
+            <tr id="targetRow"><td>placeHold</td></tr>
+        </tbody>
+    </table>
+    <div id="doing">roading</div>
+
+    <p class="newtitle">
+        <input type="text" id="newTitle" value=""/>
+        <input type="button" id="changeTitle" value="changetitle" />
+    </p>
+    <p class="newURL">
+        <input type="text" id="newURL" value=""/>
+        <input type="button" id="newURLL" value="newURL" />
+    </p>
+    <p class="history forward back">
+        <input type="button" id="frward" value="forward" />
+        <input type="button" id="back" value="back" />
+    </p>
+    <p class="closewindows">
+        <button id="closewindows" value="closewindows">closewindows</button>
+    </p>
+    <p>
+        <input type="button" value="submitForm" onclick="submitForm()"/>
+    </p>
+    <p>
+        <button id="add" >add</button>
+        <button id="remove" >remove</button>
+    </p>
+    <p>
+        <button id="move">move</button>
+    </p>
+    <p>
+        <button id="copyAdd">copyAdd</button>
+    </p>
+    <p>
+        <button id="ab">after begin</button>
+        <button id="ae">after end</button>
+        <button id="bb">before begin</button>
+        <button id="be">before end</button>
+    </p>
+
+    <script src="excise.js"></script>
+</body>
+</html>
